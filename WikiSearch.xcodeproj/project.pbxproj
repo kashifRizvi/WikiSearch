@@ -15,6 +15,7 @@
 		4B3E54DE2103BC89006C9DDD /* WikiSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E54DD2103BC89006C9DDD /* WikiSearchTests.swift */; };
 		4B3E54E92103BC89006C9DDD /* WikiSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E54E82103BC89006C9DDD /* WikiSearchUITests.swift */; };
 		4B3E54F72103BDA2006C9DDD /* SearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E54F62103BDA2006C9DDD /* SearchListViewController.swift */; };
+		4B3E54FA2103BF91006C9DDD /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E54F92103BF91006C9DDD /* SearchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4B3E54E82103BC89006C9DDD /* WikiSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiSearchUITests.swift; sourceTree = "<group>"; };
 		4B3E54EA2103BC89006C9DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B3E54F62103BDA2006C9DDD /* SearchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewController.swift; sourceTree = "<group>"; };
+		4B3E54F92103BF91006C9DDD /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,10 @@
 		4B3E54C42103BC88006C9DDD /* WikiSearch */ = {
 			isa = PBXGroup;
 			children = (
-				4B3E54C52103BC88006C9DDD /* AppDelegate.swift */,
 				4B3E54F62103BDA2006C9DDD /* SearchListViewController.swift */,
 				4B3E54C92103BC88006C9DDD /* Main.storyboard */,
-				4B3E54CF2103BC89006C9DDD /* Assets.xcassets */,
-				4B3E54D12103BC89006C9DDD /* LaunchScreen.storyboard */,
-				4B3E54D42103BC89006C9DDD /* Info.plist */,
-				4B3E54CC2103BC88006C9DDD /* WikiSearch.xcdatamodeld */,
+				4B3E54F92103BF91006C9DDD /* SearchManager.swift */,
+				4B3E54F82103BDF1006C9DDD /* Supporting Files */,
 			);
 			path = WikiSearch;
 			sourceTree = "<group>";
@@ -126,6 +125,18 @@
 				4B3E54EA2103BC89006C9DDD /* Info.plist */,
 			);
 			path = WikiSearchUITests;
+			sourceTree = "<group>";
+		};
+		4B3E54F82103BDF1006C9DDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B3E54C52103BC88006C9DDD /* AppDelegate.swift */,
+				4B3E54CF2103BC89006C9DDD /* Assets.xcassets */,
+				4B3E54D12103BC89006C9DDD /* LaunchScreen.storyboard */,
+				4B3E54D42103BC89006C9DDD /* Info.plist */,
+				4B3E54CC2103BC88006C9DDD /* WikiSearch.xcdatamodeld */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 				4B3E54CE2103BC88006C9DDD /* WikiSearch.xcdatamodeld in Sources */,
 				4B3E54F72103BDA2006C9DDD /* SearchListViewController.swift in Sources */,
 				4B3E54C62103BC88006C9DDD /* AppDelegate.swift in Sources */,
+				4B3E54FA2103BF91006C9DDD /* SearchManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = WikiSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WikiSearch/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = WikiSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WikiSearch/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
