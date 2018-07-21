@@ -16,6 +16,7 @@
 		4B3E54E92103BC89006C9DDD /* WikiSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E54E82103BC89006C9DDD /* WikiSearchUITests.swift */; };
 		4B3E54F72103BDA2006C9DDD /* SearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E54F62103BDA2006C9DDD /* SearchListViewController.swift */; };
 		4B3E54FA2103BF91006C9DDD /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E54F92103BF91006C9DDD /* SearchManager.swift */; };
+		4B3E550B2103E5BA006C9DDD /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E550A2103E5BA006C9DDD /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4B3E54EA2103BC89006C9DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B3E54F62103BDA2006C9DDD /* SearchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewController.swift; sourceTree = "<group>"; };
 		4B3E54F92103BF91006C9DDD /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		4B3E550A2103E5BA006C9DDD /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				4B3E54C92103BC88006C9DDD /* Main.storyboard */,
 				4B3E54F92103BF91006C9DDD /* SearchManager.swift */,
 				4B3E54F82103BDF1006C9DDD /* Supporting Files */,
+				4B3E550A2103E5BA006C9DDD /* SearchResult.swift */,
 			);
 			path = WikiSearch;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				4B3E54CE2103BC88006C9DDD /* WikiSearch.xcdatamodeld in Sources */,
 				4B3E54F72103BDA2006C9DDD /* SearchListViewController.swift in Sources */,
+				4B3E550B2103E5BA006C9DDD /* SearchResult.swift in Sources */,
 				4B3E54C62103BC88006C9DDD /* AppDelegate.swift in Sources */,
 				4B3E54FA2103BF91006C9DDD /* SearchManager.swift in Sources */,
 			);

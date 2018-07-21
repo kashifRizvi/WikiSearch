@@ -12,7 +12,7 @@ class SearchListViewController: UIViewController, UITableViewDataSource, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        SearchManager.searchResults(input: "Kashif")
+        SearchManager().searchResults(input: "Kashif")
         
         
     }
