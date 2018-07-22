@@ -78,7 +78,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ejT-QY-j1T"/>
                                 </connections>
                             </tableView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-Zc-N4L">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-Zc-N4L">
                                 <rect key="frame" x="177.5" y="323" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="30P-1w-syA"/>

@@ -21,6 +21,9 @@ class SearchListViewController: UIViewController, UITableViewDataSource, UITable
         tableView.rowHeight = UITableViewAutomaticDimension
         searchBar.delegate = self
         
+        activityIndicator.startAnimating()
+        tableView.isHidden = true
+        
         searchManager.completion = {
             OperationQueue.main.addOperation {
                 self.activityIndicator.stopAnimating()

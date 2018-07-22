@@ -39,7 +39,7 @@ public class SearchManager {
                                                          "pithumbsize": 100,
                                                          "pilimit": 10,
                                                          "wbptterms": "description",
-                                                         "gpslimit": 100]
+                                                         "gpslimit": 20]
     
     init() {
         fetchCachedResults()
