@@ -15,6 +15,8 @@ class SearchResult {
     var index: Int
     var description: String?
     var pageId: Int64
+    var fullUrl: String?
+    var image: UIImage?
     
     init(title: String, index: Int, description: String? = "", pageId: Int64, imageUrl: String? = nil) {
         self.title = title

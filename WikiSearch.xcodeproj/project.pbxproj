@@ -18,6 +18,8 @@
 		4B3E54FA2103BF91006C9DDD /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E54F92103BF91006C9DDD /* SearchManager.swift */; };
 		4B3E550B2103E5BA006C9DDD /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E550A2103E5BA006C9DDD /* SearchResult.swift */; };
 		4B3E550F21047CFD006C9DDD /* SearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E550E21047CFD006C9DDD /* SearchListCell.swift */; };
+		4B3E55202104C96D006C9DDD /* SearchListViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E551F2104C96D006C9DDD /* SearchListViewController+SearchBar.swift */; };
+		4B3E55222104EB7A006C9DDD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E55212104EB7A006C9DDD /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		4B3E54F92103BF91006C9DDD /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		4B3E550A2103E5BA006C9DDD /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		4B3E550E21047CFD006C9DDD /* SearchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListCell.swift; sourceTree = "<group>"; };
+		4B3E551F2104C96D006C9DDD /* SearchListViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchListViewController+SearchBar.swift"; sourceTree = "<group>"; };
+		4B3E55212104EB7A006C9DDD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				4B3E54F92103BF91006C9DDD /* SearchManager.swift */,
 				4B3E550A2103E5BA006C9DDD /* SearchResult.swift */,
 				4B3E550E21047CFD006C9DDD /* SearchListCell.swift */,
+				4B3E551F2104C96D006C9DDD /* SearchListViewController+SearchBar.swift */,
+				4B3E55212104EB7A006C9DDD /* DetailViewController.swift */,
 				4B3E54F82103BDF1006C9DDD /* Supporting Files */,
 			);
 			path = WikiSearch;
@@ -277,11 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B3E54CE2103BC88006C9DDD /* WikiSearch.xcdatamodeld in Sources */,
+				4B3E55202104C96D006C9DDD /* SearchListViewController+SearchBar.swift in Sources */,
 				4B3E550F21047CFD006C9DDD /* SearchListCell.swift in Sources */,
 				4B3E54F72103BDA2006C9DDD /* SearchListViewController.swift in Sources */,
 				4B3E550B2103E5BA006C9DDD /* SearchResult.swift in Sources */,
 				4B3E54C62103BC88006C9DDD /* AppDelegate.swift in Sources */,
 				4B3E54FA2103BF91006C9DDD /* SearchManager.swift in Sources */,
+				4B3E55222104EB7A006C9DDD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

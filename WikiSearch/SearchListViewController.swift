@@ -10,10 +10,25 @@ import UIKit
 
 class SearchListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
     let searchManager = SearchManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.estimatedRowHeight = 200
+        tableView.rowHeight = UITableViewAutomaticDimension
+        searchBar.delegate = self
+        
+        searchManager.completion = {
+            OperationQueue.main.addOperation {
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.isHidden = true
+                self.tableView.isHidden = false
+                self.tableView.reloadData()
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -21,12 +36,11 @@ class SearchListViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cachedResult = searchManager.results[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchListCell", for: indexPath) as! SearchListCell
-        cell.titleLabel.text = searchManager.results[indexPath.row].title
-        cell.detailTextLabel?.text = searchManager.results[indexPath.row].description
-        if let urlString = searchManager.results[indexPath.row].imageURL {
-            cell.imageView?.image = UIImage(data: try! Data(contentsOf: URL(string: urlString)!))
-        }
+        cell.titleLabel.text = cachedResult.title
+        cell.descriptionLabel?.text = cachedResult.description
+        cell.titleImage.image = cachedResult.image ?? UIImage(named: "placeholder-user")
         
         return cell
     }
@@ -34,6 +48,21 @@ class SearchListViewController: UIViewController, UITableViewDataSource, UITable
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        if let fullurl = searchManager.results[indexPath.row].fullUrl {
+            let detailVC = DetailViewController.viewController(withUrl: fullurl)
+            navigationController?.pushViewController(detailVC, animated: true)
+        }
+        else {
+            let alertController = UIAlertController(title: "No link available", message: "Extra information is not available for this result", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alertController.addAction(action)
+            alertController.show(self, sender: nil)
+        }
     }
     
 }
